@@ -16,3 +16,27 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+# ---------------------------------------------------------------
+# Privacy: this repository is public.  Never commit any of these.
+# ---------------------------------------------------------------
+
+# Claude Code project files (local rules, settings, notes)
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
+# Drop-off and scratch folders
+Incoming/
+private/
+drafts/
+
+# Office lock files and temp files
+~$*
+*.tmp
+*.bak
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
