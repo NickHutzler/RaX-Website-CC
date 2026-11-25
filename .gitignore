@@ -1,24 +1,22 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# ---------------------------------------------------------------
+# This repository is public.
+# Git ignores EVERYTHING in this folder by default.  Only the files
+# listed under "Allowed" are ever committed.  To publish a new file
+# or folder, add it to that list on purpose.
+# ---------------------------------------------------------------
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Ignore everything at the top level of the folder
+/*
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
-
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+# Allowed: the live site and the repo's own settings files
+!/.gitignore
+!/.gitattributes
+!/index.html
+!/CNAME
 
 # ---------------------------------------------------------------
-# Privacy: this repository is public.  Never commit any of these.
+# Second layer: never commit these anywhere, even inside a folder
+# that is later added to the allowed list.
 # ---------------------------------------------------------------
 
 # Claude Code project files (local rules, settings, notes)
